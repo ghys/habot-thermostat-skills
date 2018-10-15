@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Example Skills for HABot
+Bundle-SymbolicName: org.openhab.ui.habot.skill.thermostat
+Bundle-Version: 2.4.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: .
+Import-Package: com.google.common.collect,
+ com.google.common.io,
+ org.apache.commons.collections,
+ org.apache.commons.io,
+ org.eclipse.jdt.annotation;resolution:=optional,
+ org.eclipse.smarthome.automation;resolution:=optional,
+ org.eclipse.smarthome.automation.handler;resolution:=optional,
+ org.eclipse.smarthome.core.items,
+ org.openhab.ui.habot.card,
+ org.openhab.ui.habot.nlp,
+ org.osgi.framework,
+ org.osgi.service.component,
+ org.osgi.service.http,
+ org.slf4j
+Service-Component: OSGI-INF/*.xml
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: openHAB
